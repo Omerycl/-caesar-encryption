@@ -1,0 +1,20 @@
+  //Sezar şifreleme
+    Console.Write("metni giriniz.");
+    string metin = Console.ReadLine();
+    //şifreleme
+    string sifreli = "";
+    for (int i =0; i< metin.Length; i++)
+    {
+        sifreli += ((char)(((int)metin[i]) + 3));
+    }
+    Console.WriteLine(sifreli);
+    //deşifre
+    metin = "";
+    for (int i =0; i< sifreli.Length; i++)
+    {
+        sifreli += ((char)(((int)sifreli[i]) - 3));
+    }
+    Console.WriteLine(metin);
+    Console.ReadLine();
+    
+    
